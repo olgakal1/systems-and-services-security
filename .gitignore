@@ -1,0 +1,63 @@
+# ==============================
+# Compiled files
+# ==============================
+*.o
+*.out
+*.so
+*.exe
+
+# Common project executables
+client
+server
+rclient
+ecdh_assign_2
+rsa_assign_2
+audit_monitor
+audit_logger
+Greeter
+SecGreeter
+SecGreeterASLR
+
+# ==============================
+# Cryptographic keys / secrets
+# ==============================
+*.key
+*.pem
+*.csr
+*.srl
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+pwnenv/
+
+# ==============================
+# IDE / Editor files
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Operating system files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Archives
+# ==============================
+*.zip
+*.rar
+*.7z
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.log
+*~

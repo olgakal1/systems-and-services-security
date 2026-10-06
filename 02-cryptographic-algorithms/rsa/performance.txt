@@ -1,0 +1,33 @@
+1024 bit key length generation: 0.011910 seconds
+Peak Memory Usage (KeyGen): 2324 KB
+1024 bit encryption: 0.004152 seconds
+Peak Memory Usage (Encryption): 2324 KB
+1024 bit decryption: 0.008772 seconds
+Peak Memory Usage (Decryption): 2324 KB
+1024 bit signing: 0.002135 seconds [OK]
+Peak Memory Usage (Signing): 2324 KB
+1024 bit verification: 0.000146 seconds [VALID]
+Peak Memory Usage (Verification): 2324 KB
+
+2048 bit key length generation: 0.042880 seconds
+Peak Memory Usage (KeyGen): 2324 KB
+2048 bit encryption: 0.012910 seconds
+Peak Memory Usage (Encryption): 2324 KB
+2048 bit decryption: 0.075472 seconds
+Peak Memory Usage (Decryption): 2324 KB
+2048 bit signing: 0.004976 seconds [OK]
+Peak Memory Usage (Signing): 2324 KB
+2048 bit verification: 0.000697 seconds [VALID]
+Peak Memory Usage (Verification): 2324 KB
+
+4096 bit key length generation: 0.495880 seconds
+Peak Memory Usage (KeyGen): 2452 KB
+4096 bit encryption: 0.052593 seconds
+Peak Memory Usage (Encryption): 2452 KB
+4096 bit decryption: 0.395786 seconds
+Peak Memory Usage (Decryption): 2452 KB
+4096 bit signing: 0.020215 seconds [OK]
+Peak Memory Usage (Signing): 2452 KB
+4096 bit verification: 0.002115 seconds [VALID]
+Peak Memory Usage (Verification): 2452 KB
+

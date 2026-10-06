@@ -1,0 +1,126 @@
+# Student TCP packet
+alert tcp any any -> 192.168.1.1 54321 (
+    msg:"Student packet detected";
+    content:"Arximidis-2022030026";
+    sid:1000001;
+    rev:1;
+)
+
+# Port scan packets
+
+# HTTP
+alert tcp any any -> 192.168.1.2 80 (
+    msg:"Port scan HTTP";
+    content:"Arximidis-2022030026";
+    sid:1000002;
+    rev:1;
+)
+
+# HTTPS
+alert tcp any any -> 192.168.1.2 443 (
+    msg:"Port scan HTTPS";
+    content:"Arximidis-2022030026";
+    sid:1000003;
+    rev:1;
+)
+
+# SSH
+alert tcp any any -> 192.168.1.2 22 (
+    msg:"Port scan SSH";
+    content:"Arximidis-2022030026";
+    sid:1000004;
+    rev:1;
+)
+
+# TELNET
+alert tcp any any -> 192.168.1.2 23 (
+    msg:"Port scan TELNET";
+    content:"Arximidis-2022030026";
+    sid:1000005;
+    rev:1;
+)
+
+# FTP
+alert tcp any any -> 192.168.1.2 21 (
+    msg:"Port scan FTP";
+    content:"Arximidis-2022030026";
+    sid:1000006;
+    rev:1;
+)
+
+# DNS (UDP)
+alert udp any any -> 192.168.1.2 53 (
+    msg:"Port scan DNS";
+    content:"Arximidis-2022030026";
+    sid:1000007;
+    rev:1;
+)
+
+# RTSP
+alert tcp any any -> 192.168.1.2 554 (
+    msg:"Port scan RTSP";
+    content:"Arximidis-2022030026";
+    sid:1000008;
+    rev:1;
+)
+
+# SQL
+alert tcp any any -> 192.168.1.2 1433 (
+    msg:"Port scan SQL";
+    content:"Arximidis-2022030026";
+    sid:1000009;
+    rev:1;
+)
+
+# RDP
+alert tcp any any -> 192.168.1.2 3389 (
+    msg:"Port scan RDP";
+    content:"Arximidis-2022030026";
+    sid:1000010;
+    rev:1;
+)
+
+# MQTT
+alert tcp any any -> 192.168.1.2 1883 (
+    msg:"Port scan MQTT";
+    content:"Arximidis-2022030026";
+    sid:1000011;
+    rev:1;
+)
+
+# Base64 malicious packets
+
+alert tcp any any -> 192.168.1.3 8080 (
+    msg:"Base64 malicious packet";
+    content:"MjAyMjAzMDAyNg==";
+    sid:1000012;
+    rev:1;
+)
+
+# DNS suspicious domain packet
+
+alert udp any any -> 127.0.0.53 53 (
+    msg:"Suspicious DNS query malicious.example.com";
+    content:"malicious.example.com";
+    sid:1000013;
+    rev:1;
+)
+
+# ICMP Ping test packet
+
+alert icmp any any -> 192.168.1.4 any (
+    msg:"CMP PingTest-2024 detected";
+    content:"PingTest-2024";
+    sid:1000014;
+    rev:1;
+)
+
+
+# slammer worm
+
+alert udp any any -> any 1434 (
+    msg:"Slammer worm UDP traffic detected";
+    content:"|04|";
+    sid:2000001;
+    rev:1;
+)
